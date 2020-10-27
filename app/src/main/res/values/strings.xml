@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MultiPantalla</string>
+    <string name="btn_ir_pantalla_2">IR a pantalla 2</string>
+    <string name="txt_pantalla_2">Pantalla 2</string>
+    <string name="btn_cerrar_pantalla2">Cerrar Pantalla</string>
+    <string name="txt_num_habitantes">num. Habitantes</string>
+    <string name="txt_nombre_ciudad">Nombre Ciudad</string>
+</resources>
