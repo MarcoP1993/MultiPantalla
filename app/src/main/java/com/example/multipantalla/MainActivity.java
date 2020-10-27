@@ -28,8 +28,12 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = new Intent(this, pantalla2.class);
 
-        intent.putExtra(EXTRA_NOMBRE, nombreCiudad);
-        intent.putExtra(EXTRA_HABITANTES, habitantes);
+        //intent.putExtra(EXTRA_NOMBRE, nombreCiudad);
+        //intent.putExtra(EXTRA_HABITANTES, habitantes);
+        Bundle extras = new Bundle();
+        extras.putString(EXTRA_NOMBRE, nombreCiudad);
+        extras.putInt(EXTRA_HABITANTES, habitantes);
+        intent.putExtras(extras);
 
         startActivity(intent);
 

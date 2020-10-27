@@ -18,8 +18,11 @@ public class pantalla2 extends AppCompatActivity {
         txt_recibido = findViewById(R.id.txt_recibido);
 
         Intent intent = getIntent();
-        String nombre = intent.getStringExtra(MainActivity.EXTRA_NOMBRE);
-        int habitantes = intent.getIntExtra(MainActivity.EXTRA_HABITANTES, 0);
+       // String nombre = intent.getStringExtra(MainActivity.EXTRA_NOMBRE);
+       // int habitantes = intent.getIntExtra(MainActivity.EXTRA_HABITANTES, 0);
+        Bundle extras = intent.getExtras();
+        String nombre = extras.getString(MainActivity.EXTRA_NOMBRE);
+        int habitantes = extras.getInt(MainActivity.EXTRA_HABITANTES);
 
         String textorecibido = "nombre ciudad: " + nombre + "\n" + "habitantes: " + String.valueOf(habitantes);
         txt_recibido.setText(textorecibido);
